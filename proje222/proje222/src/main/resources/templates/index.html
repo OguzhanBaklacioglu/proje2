@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Golden Elegance</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://st5.depositphotos.com/29467332/62502/i/450/depositphotos_625021708-stock-photo-set-golden-bracelet-diamonds-black.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 600px;
+        }
+        .login-btn, .shop-now-btn {
+            background-color: #FFD700;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .login-btn:hover, .shop-now-btn:hover {
+            background-color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Golden Elegance</h1>
+    <p>Discover the timeless beauty of our exclusive golden bracelets.</p>
+    <h2>About Us</h2>
+    <p>At Golden Elegance, we pride ourselves on offering the finest selection of luxurious gold bracelets. Each piece is meticulously crafted to perfection, ensuring the highest quality and exquisite design.</p>
+    <h2>Our Collection</h2>
+    <p>From classic to contemporary, our collection features a variety of styles to suit every taste. Whether you're looking for a statement piece or a subtle accent, you'll find the perfect bracelet to complement your style.</p>
+    <button class="shop-now-btn" onclick="location.href='/login'">Shop Now</button>
+
+</div>
+</body>
+</html>
